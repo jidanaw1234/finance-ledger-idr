@@ -1,0 +1,31 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Category {
+  id            String        @id @default(cuid())
+  name          String        @unique
+  type          String        @default("EXPENSE") // "INCOME" atau "EXPENSE"
+  color         String        @default("#64748b")
+  monthlyBudget Float?
+  createdAt     DateTime      @default(now())
+  transactions  Transaction[]
+}
+
+model Transaction {
+  id          String   @id @default(cuid())
+  type        String // "INCOME" atau "EXPENSE"
+  amount      Float
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  description String?
+  source      String   @default("WEB") // "WEB" atau "TELEGRAM"
+  date        DateTime @default(now())
+  createdAt   DateTime @default(now())
+}
+
