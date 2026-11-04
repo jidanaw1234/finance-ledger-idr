@@ -6,7 +6,7 @@ Aplikasi pencatatan keuangan pribadi (*Personal Finance & Expense Tracker*) ting
 
 ## 🌟 Fitur Utama
 
-* **Telegram Bot Engine (`@Antoniiiiibot`):**
+* **Telegram Bot Engine (Multi-Kanal):**
   * Pencatatan kilat pengeluaran: `/out <nominal> <kategori> <keterangan>` (Mendukung akhiran `25k`, `50rb`, `1.5m`, `1.5jt`).
   * Pencatatan kilat pemasukan: `/in <nominal> <kategori> <keterangan>`.
   * Rekap & query instan: `/hari_ini`, `/bulan_ini`, `/rekap`, dan `/cek <kategori>`.

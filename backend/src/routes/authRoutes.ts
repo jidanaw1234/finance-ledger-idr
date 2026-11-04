@@ -40,7 +40,7 @@ async function getTelemetry() {
       latency_ms: latencyMs,
     },
     telegram_bot: {
-      handle: '@Antoniiiiibot',
+      handle: process.env.TELEGRAM_BOT_HANDLE || '@YourBot',
       status: botActive ? 'active' : 'inactive',
     },
   };
