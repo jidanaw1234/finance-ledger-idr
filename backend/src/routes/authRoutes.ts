@@ -8,8 +8,8 @@ export const authRouter = Router();
 const validTokens = new Set<string>();
 
 // Default single-user credentials (dapat disesuaikan lewat .env)
-const DEFAULT_USERNAME = process.env.ADMIN_USERNAME || 'jidan';
-const DEFAULT_PASSWORD = process.env.ADMIN_PASSWORD || 'jidanaw12';
+const DEFAULT_USERNAME = process.env.ADMIN_USERNAME || 'jidanganteng';
+const DEFAULT_PASSWORD = process.env.ADMIN_PASSWORD || 'jidanganteng12';
 
 // Helper SHA-256
 function sha256(input: string): string {

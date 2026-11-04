@@ -21,8 +21,8 @@ type UIPreviewMode = 'normal' | 'loading' | 'error' | 'success';
 
 export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   // Form state
-  const [username, setUsername] = useState('jidan');
-  const [password, setPassword] = useState('jidanaw12');
+  const [username, setUsername] = useState('jidanganteng');
+  const [password, setPassword] = useState('jidanganteng12');
   const [showPassword, setShowPassword] = useState(false);
   const [rememberSession, setRememberSession] = useState(true);
 
@@ -82,8 +82,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   };
 
   const handleAutofillDefault = () => {
-    setUsername('jidan');
-    setPassword('jidanaw12');
+    setUsername('jidanganteng');
+    setPassword('jidanganteng12');
     setErrorMessage('');
   };
 
@@ -198,7 +198,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="jidan"
+                    placeholder="jidanganteng"
                     required
                     className="w-full bg-[#090a0f] border border-[#1f2433] rounded-lg pl-9 pr-3 py-2 text-xs text-slate-200 font-mono placeholder-slate-600 outline-none focus:border-emerald-500 transition-colors"
                   />
@@ -266,12 +266,26 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
               <span>Akun Default:</span>
               <div className="flex items-center gap-2 font-mono">
                 <span className="px-1.5 py-0.5 rounded bg-[#090a0f] border border-[#1f2433] text-slate-300 text-[10px]">
-                  jidan
+                  jidanganteng
                 </span>
                 <span className="px-1.5 py-0.5 rounded bg-[#090a0f] border border-[#1f2433] text-slate-300 text-[10px]">
-                  jidanaw12
+                  jidanganteng12
                 </span>
               </div>
+            </div>
+
+            <div className="pt-2 text-center border-t border-[#1f2433]/50">
+              <span className="text-[11px] text-slate-400">
+                Kritik dan saran ke{' '}
+                <a
+                  href="https://instagram.com/jidan_211"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:text-emerald-300 font-medium hover:underline transition-colors"
+                >
+                  ig@jidan_211
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -280,7 +294,21 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
       {/* Footer Minimalis Bersih */}
       <footer className="border-t border-[#1f2433] bg-[#090a0f] px-4 sm:px-8 py-3 text-xs text-slate-400">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>&copy; 2024 Finance Ledger IDR. Hak cipta dilindungi.</span>
+          <div className="flex items-center gap-2">
+            <span>&copy; 2024 Finance Ledger IDR. Hak cipta dilindungi.</span>
+            <span className="hidden sm:inline text-slate-600">&bull;</span>
+            <span className="hidden sm:inline">
+              Kritik dan saran ke{' '}
+              <a
+                href="https://instagram.com/jidan_211"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:text-emerald-300 font-medium hover:underline transition-colors"
+              >
+                ig@jidan_211
+              </a>
+            </span>
+          </div>
           <span className="font-mono text-[11px]">Penyimpanan Data Lokal Mandiri &bull; Anti-AI Slop</span>
         </div>
       </footer>

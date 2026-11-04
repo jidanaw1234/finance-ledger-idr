@@ -291,6 +291,28 @@ export function App() {
         </div>
       </main>
 
+      {/* Footer Dashboard */}
+      <footer className="border-t border-[#1f2433] bg-[#090a0f] px-4 sm:px-8 py-4 text-xs text-slate-400 mt-12">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <span>&copy; 2024 Finance Ledger IDR</span>
+            <span className="text-slate-600">&bull;</span>
+            <span>
+              Kritik dan saran ke{' '}
+              <a
+                href="https://instagram.com/jidan_211"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:text-emerald-300 font-medium hover:underline transition-colors"
+              >
+                ig@jidan_211
+              </a>
+            </span>
+          </div>
+          <span className="font-mono text-[11px] text-slate-500">Penyimpanan Data Lokal Mandiri &bull; Anti-AI Slop</span>
+        </div>
+      </footer>
+
       {/* Modals & Overlays */}
       <TransactionModal
         isOpen={isTxModalOpen}

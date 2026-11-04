@@ -105,9 +105,14 @@ cd "Website Catatan pengeluaran"
 
 ## 🔐 Kredensial Bawaan Login Portal
 
-* **Username:** `jidan`
-* **Password:** `jidanaw12`
+* **Username:** `jidanganteng`
+* **Password:** `jidanganteng12`
 *(Dapat disesuaikan kapan saja lewat file `backend/.env`)*
+
+---
+
+## 📬 Kontak, Kritik & Saran
+* **Instagram:** [@jidan_211](https://instagram.com/jidan_211)
 
 ---
 
